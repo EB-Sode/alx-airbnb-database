@@ -15,7 +15,8 @@ SELECT
     reviews.rating,
     reviews.comment
 FROM properties
-LEFT JOIN reviews ON properties.id = reviews.property_id;
+LEFT JOIN reviews ON properties.id = reviews.property_id
+ORDER BY properties.title ASC;
 -- This query retrieves all properties along with their reviews, if any.
 
 SELECT 
